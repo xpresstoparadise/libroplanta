@@ -12,8 +12,11 @@ def send_message(theme, To, Body, Att_path, Attachment=False):
     app = win.Dispatch("Outlook.Application")
     # Создания письма
     mess = app.CreateItem(0)
-    mess.To = "sakhfdsmbvmautdsdffsdfsdainov@gerdasdsafgdgdmesgroup.com"
+    mess.To = "sakhfdsmbvavxcdasdbvxcbutkhjkhjkdsdffsdfsdainov@gerdasdsafgdgdmesgroup.com"
     # В копию
+
+
+    fdsfdff
 
 
     mess.CC = "kamalov@germesgroup.com"
