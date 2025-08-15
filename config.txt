@@ -1,0 +1,7 @@
+# Это файл конфигурации для скрипта публикации.
+# Пожалуйста, задайте значения для указанных ниже переменных.
+
+# Путь к домашней директории издателя Libroplanta.
+# Пример для Windows:
+# SERVER_PUB_HOME=C:\Program Files\Libroplanta\ServerPublisher
+SERVER_PUB_HOME=

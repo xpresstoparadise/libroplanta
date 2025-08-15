@@ -3,14 +3,21 @@
 
 import clr
 import sys
-sys.path.append("D:\S1000D XML Editor\PythonScripts\Lib")
-sys.path.append("D:\S1000D XML Editor\PythonScripts")
-sys.path.append("D:\S1000D XML Editor\DocTypes\S1000D_4.1.0\PythonScripts")
-OUT = []
 import os
-path = sys.argv[0]
 
-sys.path.append(path)
+# Определяем корневую директорию проекта относительно текущего скрипта
+script_path = os.path.abspath(sys.argv[0])
+python_scripts_dir = os.path.dirname(script_path)
+project_root = os.path.dirname(python_scripts_dir)
+
+# Добавляем пути в sys.path
+sys.path.append(os.path.join(python_scripts_dir, "Lib"))
+sys.path.append(python_scripts_dir)
+sys.path.append(os.path.join(project_root, "S1000D_4.1.0", "PythonScripts"))
+sys.path.append(os.path.join(project_root, "S1000D_4.2.0", "PythonScripts"))
+
+
+OUT = []
 clr.AddReference("PresentationFramework")
 
 import System.Windows.Controls as win
@@ -18,7 +25,7 @@ from System.Windows import Window, Thickness, HorizontalAlignment, VerticalAlign
 
 #Main entry point of starting application
 def StartApplication():
-    os.chdir(r"D:\S1000D XML Editor")
+    os.chdir(project_root)
 #     formAuth = AuthorizeForm()
 #     formAuth.ShowDialog() #Открываем диалоговое окно до запуска XmlEditor
 #     pass
