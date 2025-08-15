@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ddn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/ddn.xsd">
+	<identAndStatusSection>
+		<ddnAddress>
+			<ddnIdent>
+				<ddnCode modelIdentCode="MODEL" senderIdent="00000" receiverIdent="00000" yearOfDataIssue="2016" seqNumber="00001"/>
+			</ddnIdent>
+			<ddnAddressItems>
+				<issueDate day="01" month="01" year="2016"/>
+				<dispatchTo>
+					<dispatchAddress>
+						<enterprise>
+							<enterpriseName></enterpriseName>
+						</enterprise>
+						<dispatchPerson>
+							<lastName></lastName>
+							<firstName></firstName>
+						</dispatchPerson>
+						<address>
+							<city></city>
+							<country></country>
+						</address>
+					</dispatchAddress>
+				</dispatchTo>
+				<dispatchFrom>
+					<dispatchAddress>
+						<enterprise>
+							<enterpriseName></enterpriseName>
+						</enterprise>
+						<dispatchPerson>
+							<lastName></lastName>
+							<firstName></firstName>
+						</dispatchPerson>
+						<address>
+							<city></city>
+							<country></country>
+						</address>
+					</dispatchAddress>
+				</dispatchFrom>
+			</ddnAddressItems>
+		</ddnAddress>
+		<ddnStatus>
+			<security securityClassification="01"/>
+			<authorization></authorization>
+			<brexDmRef>
+				<dmRef>
+				  <dmRefIdent>
+					<dmCode modelIdentCode="MODELIC" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+				  </dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+		</ddnStatus>
+	</identAndStatusSection>
+	<ddnContent>
+		<mediaIdent/>
+		<deliveryList></deliveryList>
+	</ddnContent>
+</ddn>

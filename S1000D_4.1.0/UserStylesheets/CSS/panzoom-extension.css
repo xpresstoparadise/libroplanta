@@ -1,0 +1,39 @@
+.lp-panzoom-extension-wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto; }
+
+.lp-panzoom-extension-wrapper.fullscreen {
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+
+.lp-panzoom-extension-wrapper.fullscreen .lp-panzoom-extension-object {
+  width: 100%;
+  height: 100%; }
+
+.lp-panzoom-extension-wrapper.fullscreen .button-fullscreen {
+  display: none; }
+
+.lp-panzoom-extension-wrapper.fullscreen .button-unfullscreen {
+  display: block; }
+
+.lp-panzoom-extension-wrapper .button-unfullscreen {
+  display: none; }
+
+.lp-panzoom-extension-control-button {
+  cursor: pointer;
+  margin: 5px; }
+
+.lp-panzoom-extension-control-panel {
+  display: flex;
+  justify-content: center; }
+
+.lp-panzoom-extension-container {
+  overflow: hidden; }
+
+/*# sourceMappingURL=panzoom-extension.js.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwYW56b29tLWV4dGVuc2lvbi5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

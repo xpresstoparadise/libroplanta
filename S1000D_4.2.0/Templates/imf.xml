@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<icnMetadataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/icnmetadata.xsd" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<imfIdentAndStatusSection>
+		<imfAddress>
+			<imfIdent>
+				<imfCode imfIdentIcn="ICN"/>
+				<issueInfo issueNumber="000" inWork="01"/>
+			</imfIdent>
+			<imfAddressItems>
+				<icnTitle/>
+			</imfAddressItems>
+		</imfAddress>
+		<imfStatus>
+			<security securityClassification="01"/>
+			<responsiblePartnerCompany/>
+			<originator/>
+			<qualityAssurance>
+				<unverified/>
+			</qualityAssurance>
+		</imfStatus>
+	</imfIdentAndStatusSection>
+</icnMetadataFile>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Transformations>
+	<!--
+		To transform xml with several transformations sequentially use element Transformation for each XSLT.
+		Use conditionXPath to apply or not apply transformation (It can be used for choosing specific transformations).
+		Empty conditionXPath means that transformation will be applied always.
+		Empty baseXsltUri means current folder.
+		Empty baseXmlUri means user temp folder.
+	-->
+	<Transformation conditionXPath="/empty"
+					Uri="FOANDHTML/common.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/applicCrossRefTable" 
+					Uri="FOANDHTML/appliccrossreftable.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/brDoc" 
+					Uri="FOANDHTML/brdoc.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/brex" 
+					Uri="FOANDHTML/brex.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/checkList" 
+					Uri="FOANDHTML/checklist.xsd.xslt" baseXsltUri="" baseXmlUri=""/>					
+	<Transformation conditionXPath="/comment" 
+					Uri="FOANDHTML/comment.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/commonRepository" 
+					Uri="FOANDHTML/comrep.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/condCrossRefTable" 
+					Uri="FOANDHTML/condcrossreftable.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/container" 
+					Uri="FOANDHTML/container.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/crew" 
+					Uri="FOANDHTML/crew.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/ddn" 
+					Uri="FOANDHTML/ddn.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/description" 
+					Uri="FOANDHTML/descript.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dml" 
+					Uri="FOANDHTML/dml.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/faultIsolation|/dmodule/content/faultReporting" 
+					Uri="FOANDHTML/fault.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/frontMatter" 
+					Uri="FOANDHTML/frontmatter.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/icnMetadataFile" 
+					Uri="FOANDHTML/icnmetadata.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/illustratedPartsCatalog" 
+					Uri="FOANDHTML/ipd.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/learning" 
+					Uri="FOANDHTML/learning.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/pm" 
+					Uri="FOANDHTML/pm.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/productCrossRefTable" 
+					Uri="FOANDHTML/prdcrossreftable.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/procedure" 
+					Uri="FOANDHTML/proced.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/process" 
+					Uri="FOANDHTML/process.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/sb" 
+					Uri="FOANDHTML/sb.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/maintPlanning" 
+					Uri="FOANDHTML/schedul.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dmodule/content/scoContent" 
+					Uri="FOANDHTML/scocontent.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/scormContentPackage" 
+					Uri="FOANDHTML/scormcontentpackage.xsd.xslt" baseXsltUri="" baseXmlUri=""/>
+	<Transformation conditionXPath="/dataUpdateFile" 
+					Uri="FOANDHTML/update.xsd.xslt" baseXsltUri="" baseXmlUri=""/>	
+	<Transformation conditionXPath="/dmodule/content/wiringData" 
+					Uri="FOANDHTML/wrngdata.xsd.xslt" baseXsltUri="" baseXmlUri=""/>		
+	<Transformation conditionXPath="/dmodule/content/wiringFields" 
+					Uri="FOANDHTML/wrngflds.xsd.xslt" baseXsltUri="" baseXmlUri=""/>						
+</Transformations>

@@ -1,0 +1,43 @@
+<xs:schema targetNamespace="http://ltsc.ieee.org/xsd/LOM"
+           xmlns="http://ltsc.ieee.org/xsd/LOM"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           version="IEEE LTSC LOM XML 1.0">
+
+   <xs:annotation>
+      <xs:documentation>
+         This work is licensed under the Creative Commons Attribution-ShareAlike
+         License.  To view a copy of this license, see the file license.txt,
+         visit http://creativecommons.org/licenses/by-sa/1.0 or send a letter to
+         Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+      </xs:documentation>
+
+      <xs:documentation>
+         This component schema provides the element name declaration for the
+         root element for all LOM instances.
+      </xs:documentation>
+   </xs:annotation>
+
+   <!-- Element declarations -->
+
+   <!-- Learning Object Metadata -->
+   <xs:element name="lom" type="lom">
+      <xs:annotation>
+         <xs:documentation xml:lang="ru">
+            <title>Метаданные объекта обучения</title>
+            <description>Метаданные объекта обучения (англ. Learning Object Metadata, LOM) — модель данных, как правило, закодированная в формате XML, используемая для описания объекта обучения и прочих электронных ресурсов используемых для поддержки обучения. Назначение метаданных объекта обучения состоит в поддержке многократного использования объектов обучения, большей понятности и облегчении их интероперабельности, обычно в контексте систем дистанционного обучения (СДО, англ. Learning Management System, LMS).</description>
+            <ref></ref>
+         </xs:documentation>
+         <xs:documentation xml:lang="en">
+            <title>Learning Object Metadata</title>
+            <description>Learning Object Metadata is a data model, usually encoded in XML, used to describe a learning object and similar digital resources used to support learning. The purpose of learning object metadata is to support the reusability of learning objects, to aid discoverability, and to facilitate their interoperability, usually in the context of online learning management systems (LMS).</description>
+            <ref></ref>
+         </xs:documentation>
+      </xs:annotation>   
+      <xs:unique name="lomUnique">
+         <xs:selector xpath="*"/>
+         <xs:field xpath="@uniqueElementName"/>
+      </xs:unique>
+   </xs:element>
+
+</xs:schema>

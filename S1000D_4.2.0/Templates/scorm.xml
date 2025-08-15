@@ -1,0 +1,37 @@
+﻿<scormContentPackage xmlns:lom="http://ltsc.ieee.org/xsd/LOM" xmlns:ns3="http://ltsc.ieee.org/xsd/LOM/extend" xmlns:ns1="http://ltsc.ieee.org/xsd/LOM/unique" xmlns:ns2="http://ltsc.ieee.org/xsd/LOM/vocab" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/scormcontentpackage.xsd">
+	<identAndStatusSection>
+		<scormContentPackageAddress>
+			<scormContentPackageIdent>
+				<scormContentPackageCode modelIdentCode="MODEL" scormContentPackageIssuer="00000" scormContentPackageNumber="00000" scormContentPackageVolume="00"/>
+				<language countryIsoCode="US" languageIsoCode="en"/>
+				<issueInfo inWork="00" issueNumber="001"/>
+			</scormContentPackageIdent>
+			<scormContentPackageAddressItems>
+				<issueDate day="01" month="01" year="2016"/>
+				<scormContentPackageTitle></scormContentPackageTitle>
+			</scormContentPackageAddressItems>
+		</scormContentPackageAddress>
+		<scormContentPackageStatus>
+			<security securityClassification="01"/>
+			<responsiblePartnerCompany enterpriseCode="00000"/>
+			<originator enterpriseCode="00000"/>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<unverified/>
+			</qualityAssurance>
+			<personSkill skillLevelCode="sk01" />			
+		</scormContentPackageStatus>
+	</identAndStatusSection>
+	<content>
+		<scoEntry>
+			<scoEntryTitle></scoEntryTitle>
+			<scoEntryItem><dmRef><dmRefIdent><dmCode modelIdentCode="" systemDiffCode="" systemCode="" subSystemCode="" subSubSystemCode="" assyCode="" disassyCode="" disassyCodeVariant="" infoCode="" infoCodeVariant="" itemLocationCode="" /></dmRefIdent></dmRef></scoEntryItem>			
+		</scoEntry>
+	</content>
+</scormContentPackage>

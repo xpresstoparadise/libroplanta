@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchDictionary>
+	<Texts>
+		<!--<Text value="?"></Text>-->
+	</Texts>
+	<Contexts>
+		<Context xPathValue="//text()">
+			<Meaning language="en">Text only</Meaning>
+			<Meaning language="ru">В тексте</Meaning>
+		</Context>
+		<Context xPathValue="//@*">
+			<Meaning language="en">Attributes only</Meaning>
+			<Meaning language="ru">В атрибутах</Meaning>
+		</Context>		
+    <Context xPathValue="//text()|//@*">
+      <Meaning language="en">Text and attibutes</Meaning>
+      <Meaning language="ru">В тексте и атрибутах</Meaning>
+    </Context>		
+	</Contexts>
+	<Replaces>
+		<!--<Replace value="?"></Replace>-->
+	</Replaces>	
+	<XPATHs xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+		<XPATH xPathValue="//emphasis">
+			<Meaning language="en">Remove all emphasis</Meaning>
+			<Meaning language="ru">Удалить все выделения текста</Meaning>
+			<XSLTTemplate><xsl:copy-of select="./node()"></xsl:copy-of></XSLTTemplate>
+		</XPATH>
+		<XPATH xPathValue="//emphasis">
+			<Meaning language="en">Set all emphasis to bold</Meaning>
+			<Meaning language="ru">Сменить все выделения текста на "жирный"</Meaning>
+			<XSLTTemplate>
+<xsl:copy select=".">
+  <xsl:copy-of select="@*"></xsl:copy-of>
+  <xsl:attribute name="emphasisType">em01</xsl:attribute>
+  <xsl:copy-of select="./node()"></xsl:copy-of>
+</xsl:copy>
+      </XSLTTemplate>		
+		</XPATH>
+	</XPATHs>
+</SearchDictionary>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- <valuesGroup> -->
+		<!-- <values id="colors"></values> -->
+	<!-- </valuesGroup> -->
+	<cssGroup>
+		<css name="color">
+			<fo-attribute name="color"></fo-attribute>
+		</css>
+		<css name="font-style">
+			<fo-attribute name="font-style"></fo-attribute>
+		</css>	
+	</cssGroup>
+</root>

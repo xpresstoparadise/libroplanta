@@ -1,0 +1,3488 @@
+{
+  "dmodule": {
+    "@xmlns:ns1": "http://www.w3.org/1999/xlink",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@xsi:noNamespaceSchemaLocation": "http://www.s1000d.org/S1000D_4-1/xml_schema_flat/ipd.xsd",
+    "identAndStatusSection": {
+      "dmAddress": {
+        "dmIdent": {
+          "dmCode": {
+            "@assyCode": "00",
+            "@disassyCode": "08",
+            "@disassyCodeVariant": "S",
+            "@infoCode": "941",
+            "@infoCodeVariant": "A",
+            "@itemLocationCode": "D",
+            "@modelIdentCode": "SAZX1",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "@systemDiffCode": "A"
+          },
+          "language": {
+            "@countryIsoCode": "RU",
+            "@languageIsoCode": "ru"
+          },
+          "issueInfo": {
+            "@inWork": "00",
+            "@issueNumber": "001"
+          }
+        },
+        "dmAddressItems": {
+          "issueDate": {
+            "@day": "25",
+            "@month": "10",
+            "@year": "2022"
+          },
+          "dmTitle": {
+            "techName": "Установка механизма управления дверью грузовой",
+            "infoName": "Данные каталога"
+          }
+        }
+      },
+      "dmStatus": {
+        "@issueType": "new",
+        "security": {
+          "@securityClassification": "01"
+        },
+        "responsiblePartnerCompany": {
+          "@enterpriseCode": "AA62F",
+          "enterpriseName": "IRKUT"
+        },
+        "originator": {
+          "@enterpriseCode": "AA62F",
+          "enterpriseName": "IRKUT"
+        },
+        "applic": {
+          "displayText": {
+            "simplePara": null
+          },
+          "assert": {
+            "@applicPropertyIdent": "serialno",
+            "@applicPropertyType": "prodattr",
+            "@applicPropertyValues": "0013~0016"
+          }
+        },
+        "brexDmRef": {
+          "dmRef": {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "00",
+                "@disassyCode": "00",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "022",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "0",
+                "@subSystemCode": "0",
+                "@systemCode": "00",
+                "@systemDiffCode": "A"
+              }
+            }
+          }
+        },
+        "qualityAssurance": {
+          "unverified": null
+        }
+      }
+    },
+    "content": {
+      "refs": {
+        "dmRef": [
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "03",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "1",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Вал гибкий",
+                "infoName": "Монтаж"
+              }
+            }
+          },
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "01",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "1",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Электропривод",
+                "infoName": "Монтаж"
+              }
+            }
+          },
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "06",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "1",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Рычаг",
+                "infoName": "Монтаж"
+              }
+            }
+          },
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "05",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "1",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Тяга",
+                "infoName": "Монтаж"
+              }
+            }
+          },
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "02",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "1",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Панель управления",
+                "infoName": "Монтаж"
+              }
+            }
+          },
+          {
+            "dmRefIdent": {
+              "dmCode": {
+                "@assyCode": "04",
+                "@disassyCode": "15",
+                "@disassyCodeVariant": "A",
+                "@infoCode": "720",
+                "@infoCodeVariant": "A",
+                "@itemLocationCode": "A",
+                "@modelIdentCode": "21000",
+                "@subSubSystemCode": "2",
+                "@subSystemCode": "3",
+                "@systemCode": "52",
+                "@systemDiffCode": "A"
+              }
+            },
+            "dmRefAddressItems": {
+              "dmTitle": {
+                "techName": "Рукоятка приводная",
+                "infoName": "Монтаж"
+              }
+            }
+          }
+        ]
+      },
+      "illustratedPartsCatalog": {
+        "figure": {
+          "@id": "fig-001",
+          "title": "Установка механизма управления дверью грузовой",
+          "graphic": [
+            {
+              "@id": "fig-001-gra-001",
+              "@infoEntityIdent": "ICN-21000-R-523000-0-AA62F-11687-A-001-01",
+              "@ns1:href": "ICN-21000-R-523000-0-AA62F-11687-A-001-01.cgm",
+              "@ns1:type": "simple",
+              "hotspot": [
+                {
+                  "@applicationStructureIdent": "AUTOID_041",
+                  "@applicationStructureName": "5",
+                  "@id": "fig-001-gra-001-hot-001",
+                  "@objectDescr": "Вал гибкий В-Ф2-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "005",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_028",
+                  "@applicationStructureName": "10",
+                  "@id": "fig-001-gra-001-hot-002",
+                  "@objectDescr": "Вал гибкий В-Ф4-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "010",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_060",
+                  "@applicationStructureName": "35",
+                  "@id": "fig-001-gra-001-hot-003",
+                  "@objectDescr": "Рукоятка ручного привода РП-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "035",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                }
+              ]
+            },
+            {
+              "@id": "fig-001-gra-002",
+              "@infoEntityIdent": "ICN-21000-R-523000-0-AA62F-11688-A-001-01",
+              "@ns1:href": "ICN-21000-R-523000-0-AA62F-11688-A-001-01.cgm",
+              "@ns1:type": "simple",
+              "hotspot": [
+                {
+                  "@applicationStructureIdent": "AUTOID_037",
+                  "@applicationStructureName": "10",
+                  "@id": "fig-001-gra-002-hot-001",
+                  "@objectDescr": "Вал гибкий В-Ф4-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "010",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_038",
+                  "@applicationStructureName": "30",
+                  "@id": "fig-001-gra-002-hot-002",
+                  "@objectDescr": "Панель управления ПУ-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "030",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_039",
+                  "@applicationStructureName": "60",
+                  "@id": "fig-001-gra-002-hot-003",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "060",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_040",
+                  "@applicationStructureName": "65",
+                  "@id": "fig-001-gra-002-hot-004",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "065",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_080",
+                  "@applicationStructureName": "70",
+                  "@id": "fig-001-gra-002-hot-005",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "070",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_175",
+                  "@applicationStructureName": "80",
+                  "@id": "fig-001-gra-002-hot-006",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "080",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_204",
+                  "@applicationStructureName": "80",
+                  "@id": "fig-001-gra-002-hot-007",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "080",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_176",
+                  "@applicationStructureName": "85",
+                  "@id": "fig-001-gra-002-hot-008",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "085",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_205",
+                  "@applicationStructureName": "85",
+                  "@id": "fig-001-gra-002-hot-009",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "085",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_041",
+                  "@applicationStructureName": "90",
+                  "@id": "fig-001-gra-002-hot-010",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "090",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_042",
+                  "@applicationStructureName": "95",
+                  "@id": "fig-001-gra-002-hot-011",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "095",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_160",
+                  "@applicationStructureName": "105",
+                  "@id": "fig-001-gra-002-hot-012",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "105",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_055",
+                  "@applicationStructureName": "105",
+                  "@id": "fig-001-gra-002-hot-013",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "105",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_189",
+                  "@applicationStructureName": "105",
+                  "@id": "fig-001-gra-002-hot-014",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "105",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_188",
+                  "@applicationStructureName": "110",
+                  "@id": "fig-001-gra-002-hot-015",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "110",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_159",
+                  "@applicationStructureName": "110",
+                  "@id": "fig-001-gra-002-hot-016",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "110",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_056",
+                  "@applicationStructureName": "110",
+                  "@id": "fig-001-gra-002-hot-017",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "110",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_057",
+                  "@applicationStructureName": "115",
+                  "@id": "fig-001-gra-002-hot-018",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "115",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_058",
+                  "@applicationStructureName": "130",
+                  "@id": "fig-001-gra-002-hot-019",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "130",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_166",
+                  "@applicationStructureName": "135",
+                  "@id": "fig-001-gra-002-hot-020",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "135",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_192",
+                  "@applicationStructureName": "135",
+                  "@id": "fig-001-gra-002-hot-021",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "135",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_193",
+                  "@applicationStructureName": "140",
+                  "@id": "fig-001-gra-002-hot-022",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "140",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_167",
+                  "@applicationStructureName": "140",
+                  "@id": "fig-001-gra-002-hot-023",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "140",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_060",
+                  "@applicationStructureName": "145",
+                  "@id": "fig-001-gra-002-hot-024",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "145",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_061",
+                  "@applicationStructureName": "145",
+                  "@id": "fig-001-gra-002-hot-025",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "145",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_153",
+                  "@applicationStructureName": "185",
+                  "@id": "fig-001-gra-002-hot-026",
+                  "@objectDescr": "Хомут в сборе с Обкладкой 2-13 ОСТ 1 11528-80 и Лентой 90 ОСТ 1 14802-2008",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "185",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_014",
+                  "@applicationStructureName": "190",
+                  "@id": "fig-001-gra-002-hot-027",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "190",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_008",
+                  "@applicationStructureName": "195",
+                  "@id": "fig-001-gra-002-hot-028",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "195",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_180",
+                  "@applicationStructureName": "210",
+                  "@id": "fig-001-gra-002-hot-029",
+                  "@objectDescr": "Хомут в сборе с Обкладкой 2-13 ОСТ 1 11528-80 и Лентой 90 ОСТ 1 14802-2008",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "210",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_018",
+                  "@applicationStructureName": "215",
+                  "@id": "fig-001-gra-002-hot-030",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "215",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_016",
+                  "@applicationStructureName": "220",
+                  "@id": "fig-001-gra-002-hot-031",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "220",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                }
+              ]
+            },
+            {
+              "@id": "fig-001-gra-003",
+              "@infoEntityIdent": "ICN-21000-R-523000-0-AA62F-11689-A-001-01",
+              "@ns1:href": "ICN-21000-R-523000-0-AA62F-11689-A-001-01.cgm",
+              "@ns1:type": "simple",
+              "hotspot": [
+                {
+                  "@applicationStructureIdent": "AUTOID_004",
+                  "@applicationStructureName": "10",
+                  "@id": "fig-001-gra-003-hot-001",
+                  "@objectDescr": "Вал гибкий В-Ф4-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "010",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_068",
+                  "@applicationStructureName": "15",
+                  "@id": "fig-001-gra-003-hot-002",
+                  "@objectDescr": "Электропривод ЭП-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "015",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_043",
+                  "@applicationStructureName": "17",
+                  "@id": "fig-001-gra-003-hot-003",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "017",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_045",
+                  "@applicationStructureName": "16",
+                  "@id": "fig-001-gra-003-hot-004",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "016",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_072",
+                  "@applicationStructureName": "20",
+                  "@id": "fig-001-gra-003-hot-005",
+                  "@objectDescr": "Рычаг Р-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "020",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_076",
+                  "@applicationStructureName": "25",
+                  "@id": "fig-001-gra-003-hot-006",
+                  "@objectDescr": "Тяга регулируемая ТР-УГДФ",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "025",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_082",
+                  "@applicationStructureName": "40",
+                  "@id": "fig-001-gra-003-hot-007",
+                  "@objectDescr": "Упор",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "040",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_029",
+                  "@applicationStructureName": "45",
+                  "@id": "fig-001-gra-003-hot-008",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "045",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_121",
+                  "@applicationStructureName": "50",
+                  "@id": "fig-001-gra-003-hot-009",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "050",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_054",
+                  "@applicationStructureName": "55",
+                  "@id": "fig-001-gra-003-hot-010",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "055",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_105",
+                  "@applicationStructureName": "75",
+                  "@id": "fig-001-gra-003-hot-011",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "075",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_112",
+                  "@applicationStructureName": "100",
+                  "@id": "fig-001-gra-003-hot-012",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "100",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_102",
+                  "@applicationStructureName": "120",
+                  "@id": "fig-001-gra-003-hot-013",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "120",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_124",
+                  "@applicationStructureName": "120",
+                  "@id": "fig-001-gra-003-hot-014",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "120",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_115",
+                  "@applicationStructureName": "125",
+                  "@id": "fig-001-gra-003-hot-015",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "125",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_085",
+                  "@applicationStructureName": "150",
+                  "@id": "fig-001-gra-003-hot-016",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "150",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_079",
+                  "@applicationStructureName": "155",
+                  "@id": "fig-001-gra-003-hot-017",
+                  "@objectDescr": "Шплинт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "155",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_056",
+                  "@applicationStructureName": "160",
+                  "@id": "fig-001-gra-003-hot-018",
+                  "@objectDescr": "Шплинт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "160",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_108",
+                  "@applicationStructureName": "165",
+                  "@id": "fig-001-gra-003-hot-019",
+                  "@objectDescr": "Шплинт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "165",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_059",
+                  "@applicationStructureName": "170",
+                  "@id": "fig-001-gra-003-hot-020",
+                  "@objectDescr": "Шплинт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "170",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_007",
+                  "@applicationStructureName": "225",
+                  "@id": "fig-001-gra-003-hot-021",
+                  "@objectDescr": "Ось",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "225",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_019",
+                  "@applicationStructureName": "230",
+                  "@id": "fig-001-gra-003-hot-022",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "230",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_024",
+                  "@applicationStructureName": "235",
+                  "@id": "fig-001-gra-003-hot-023",
+                  "@objectDescr": "Шплинт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "235",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_060",
+                  "@applicationStructureName": "245",
+                  "@id": "fig-001-gra-003-hot-024",
+                  "@objectDescr": "Кронштейн в сборе",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "245",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_018",
+                  "@applicationStructureName": "330",
+                  "@id": "fig-001-gra-003-hot-025",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "330",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                }
+              ]
+            },
+            {
+              "@id": "fig-001-gra-004",
+              "@infoEntityIdent": "ICN-21000-R-523000-0-AA62F-11690-A-001-01",
+              "@ns1:href": "ICN-21000-R-523000-0-AA62F-11690-A-001-01.cgm",
+              "@ns1:type": "simple",
+              "hotspot": [
+                {
+                  "@applicationStructureIdent": "AUTOID_035",
+                  "@applicationStructureName": "21",
+                  "@id": "fig-001-gra-004-hot-001",
+                  "@objectDescr": "Крышка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "021",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_034",
+                  "@applicationStructureName": "22",
+                  "@id": "fig-001-gra-004-hot-002",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "022",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_055",
+                  "@applicationStructureName": "260",
+                  "@id": "fig-001-gra-004-hot-003",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "260",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_039",
+                  "@applicationStructureName": "265",
+                  "@id": "fig-001-gra-004-hot-004",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "265",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_071",
+                  "@applicationStructureName": "270",
+                  "@id": "fig-001-gra-004-hot-005",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "270",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_041",
+                  "@applicationStructureName": "270",
+                  "@id": "fig-001-gra-004-hot-006",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "270",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_036",
+                  "@applicationStructureName": "285",
+                  "@id": "fig-001-gra-004-hot-007",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "285",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_069",
+                  "@applicationStructureName": "285",
+                  "@id": "fig-001-gra-004-hot-008",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "285",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_073",
+                  "@applicationStructureName": "290",
+                  "@id": "fig-001-gra-004-hot-009",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "290",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_067",
+                  "@applicationStructureName": "295",
+                  "@id": "fig-001-gra-004-hot-010",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "295",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_042",
+                  "@applicationStructureName": "300",
+                  "@id": "fig-001-gra-004-hot-011",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "300",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_037",
+                  "@applicationStructureName": "310",
+                  "@id": "fig-001-gra-004-hot-012",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "310",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_070",
+                  "@applicationStructureName": "315",
+                  "@id": "fig-001-gra-004-hot-013",
+                  "@objectDescr": "Винт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "315",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_038",
+                  "@applicationStructureName": "320",
+                  "@id": "fig-001-gra-004-hot-014",
+                  "@objectDescr": "Гайка",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "320",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_059",
+                  "@applicationStructureName": "325",
+                  "@id": "fig-001-gra-004-hot-015",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "325",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_068",
+                  "@applicationStructureName": "325",
+                  "@id": "fig-001-gra-004-hot-016",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "325",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_074",
+                  "@applicationStructureName": "325",
+                  "@id": "fig-001-gra-004-hot-017",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "325",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_047",
+                  "@applicationStructureName": "285",
+                  "@id": "fig-001-gra-004-hot-018",
+                  "@objectDescr": "Хомут",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "285",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_048",
+                  "@applicationStructureName": "305",
+                  "@id": "fig-001-gra-004-hot-019",
+                  "@objectDescr": "Болт",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "305",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                },
+                {
+                  "@applicationStructureIdent": "AUTOID_049",
+                  "@applicationStructureName": "325",
+                  "@id": "fig-001-gra-004-hot-020",
+                  "@objectDescr": "Шайба",
+                  "catalogSeqNumberRef": {
+                    "@figureNumber": "08",
+                    "@figureNumberVariant": "S",
+                    "@item": "325",
+                    "@itemSeqNumberValue": "00A"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "catalogSeqNumber": [
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "001",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-5231-3200-000-8031"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка механизма управления грузовой дверью"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              },
+              "functionalItemRef": {
+                "@functionalItemNumber": "31AD"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "002",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-5232-3200-000-8051"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка механизма управления грузовой дверью"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              },
+              "functionalItemRef": {
+                "@functionalItemNumber": "32AD"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "005",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.303716.002"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Вал гибкий В-Ф2-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "03",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              },
+              "functionalItemRef": {
+                "@functionalItemNumber": "31AD-3"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "010",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.303716.002-01"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Вал гибкий В-Ф4-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "03",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              },
+              "functionalItemRef": {
+                "@functionalItemNumber": "32AD-3"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "015",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.798133.014"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Электропривод ЭП-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "01",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "functionalItemRef": [
+                {
+                  "@functionalItemNumber": "32AD-1"
+                },
+                {
+                  "@functionalItemNumber": "31AD-1"
+                }
+              ]
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "016",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "8Б8.919.032"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "017",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "8Б8.945.256"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "020",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.303674.001"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Рычаг Р-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "06",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "functionalItemRef": [
+                {
+                  "@functionalItemNumber": "31AD-6"
+                },
+                {
+                  "@functionalItemNumber": "32AD-6"
+                }
+              ]
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "021",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "2",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "8Б8.054.408"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Крышка"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "022",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "4",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-12-Хим.Пас ОСТ 1 31523-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "025",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.304591.003"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Тяга регулируемая ТР-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "05",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "functionalItemRef": [
+                {
+                  "@functionalItemNumber": "31AD-5"
+                },
+                {
+                  "@functionalItemNumber": "32AD-5"
+                }
+              ]
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "030",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.794344.025"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Панель управления ПУ-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "02",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "1",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "functionalItemRef": [
+                {
+                  "@functionalItemNumber": "31AD-2"
+                },
+                {
+                  "@functionalItemNumber": "32AD-2"
+                }
+              ]
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "035",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "КУИВ.303838.001"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Рукоятка ручного привода РП-УГДФ"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "referTo": {
+                  "refs": {
+                    "dmRef": {
+                      "dmRefIdent": {
+                        "dmCode": {
+                          "@assyCode": "04",
+                          "@disassyCode": "15",
+                          "@disassyCodeVariant": "A",
+                          "@infoCode": "720",
+                          "@infoCodeVariant": "A",
+                          "@itemLocationCode": "A",
+                          "@modelIdentCode": "21000",
+                          "@subSubSystemCode": "2",
+                          "@subSystemCode": "3",
+                          "@systemCode": "52",
+                          "@systemDiffCode": "A"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              },
+              "functionalItemRef": {
+                "@functionalItemNumber": "32AD-15"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "040",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-5232-3200-011-0011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Упор"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "045",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "8-Кд ОСТ 1 11532-74"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "050",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "IZ.MC21-52-045139.TSZ.01"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "055",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "IZ.MC21-52-044670.TSZ.02"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "060",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-Кд ОСТ 1 11532-74"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "065",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "IZ.MC21-52-055465.TSZ.01"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "070",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "IZ.MC21-52-044670.TSZ.01"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "075",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "(2)-15-48-Кд ОСТ 1 31133-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "080",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "16",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-12-Кд ОСТ 1 31103-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "085",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "10",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-12-Кд ОСТ 1 31103-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "090",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-14-Кд ОСТ 1 31103-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "095",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "24",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-20-Кд ОСТ 1 31103-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "100",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "14-Кд ОСТ 1 33048-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "105",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "17",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-Кд ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "110",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "11",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-Кд ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "115",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "30",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-Кд ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "120",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "8",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "(6)-8-Хим.Пас ОСТ 1 33019-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "125",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "2-14-22-Кд ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "130",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1,5-4-8-Ан.Окс ОСТ 1 34509-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "135",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "16",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1,5-4-8-Кд ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "140",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "10",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1,5-4-8-Кд ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "145",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "48",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1,5-5-10-Кд ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "150",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "7",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1,5-8-16-Хим.Пас ОСТ 1 34508-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "155",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "2,5х18.2.11 ГОСТ 397-79"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шплинт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "160",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "2,5х18.2.11 ГОСТ 397-79"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шплинт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "165",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "2,5х32.2.11 ГОСТ 397-79"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шплинт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "170",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "2,5х32.2.11 ГОСТ 397-79"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шплинт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "175",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "5",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "24-2-1 ОСТ 1 14798-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "180",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "4",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "24-2-1 ОСТ 1 14798-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "185",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "27-2-1-1 ОСТ 1 14799-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "190",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-14-Кд ОСТ 1 31529-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "195",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-Кд ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "200",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "3",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "24-2-1 ОСТ 1 14798-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "205",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "24-2-1 ОСТ 1 14798-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "210",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "27-2-1-2 ОСТ 1 14799-2010"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "215",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-14-Кд ОСТ 1 31529-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "3",
+            "@item": "220",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-Кд ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "225",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "8Б8.327.011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Ось"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "230",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "16-Хим.Пас. ОСТ 1 33049-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "235",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "3,2х36.2.11 ГОСТ 397-79"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шплинт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "240",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9125-5110-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка элементов крепления жгутов на механизме управления дверью грузовой передней"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "245",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9125-5102-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Кронштейн в сборе"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "250",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9122-9000-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка жгутов в отсеках Ф1-Ф3 (1-37 шп.)"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "255",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9123-9000-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка жгутов в отсеках Ф4А-Ф5 (37-60 шп.)"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "260",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-16-Ц.фос.окс ОСТ 1 31109-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "265",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-Ц-ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "270",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "2",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "0,5-5-10-Ан.Окс-ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "275",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9125-6900-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка жгутов СМПК в БГО1"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "A"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "1",
+            "@item": "280",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "REF",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "1211-9128-6900-000-8011"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Установка жгутов СМПК в БГО2"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "notIllustrated": "-"
+              },
+              "applicabilitySegment": {
+                "usableOnCodeAssy": "B"
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "285",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "3",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "TA02213CO_09HB/A"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "290",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "TA02213CO_16HB/A"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "295",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "TA02213CO_18HB/A"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "300",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "AS 21919 WCH08"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Хомут"
+                },
+                "techData": null
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "305",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-32-Кд ОСТ 1 31109-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Болт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "310",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "4-12-Кд ОСТ 1 31508-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "315",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-12-Кд ОСТ 1 31508-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Винт"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "320",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "5-Ц-ОСТ 1 33055-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Гайка"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "325",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "4",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "0,5-5-10-Ан.Окс-ОСТ 1 34507-80"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          },
+          {
+            "@assyCode": "00",
+            "@figureNumber": "08",
+            "@figureNumberVariant": "S",
+            "@indenture": "2",
+            "@item": "330",
+            "@subSubSystemCode": "1",
+            "@subSystemCode": "3",
+            "@systemCode": "52",
+            "itemSeqNumber": {
+              "@itemSeqNumberValue": "00A",
+              "quantityPerNextHigherAssy": "1",
+              "partRef": {
+                "@manufacturerCodeValue": "",
+                "@partNumberValue": "192  ОСТ 1 14461-87"
+              },
+              "partSegment": {
+                "itemIdentData": {
+                  "descrForPart": "Шайба"
+                },
+                "techData": null
+              },
+              "partLocationSegment": {
+                "attachStoreShipPart": {
+                  "@attachStoreShipPartCode": "1"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

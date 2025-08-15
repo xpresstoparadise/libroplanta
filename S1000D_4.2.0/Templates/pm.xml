@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/pm.xsd" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <identAndStatusSection>
+		<pmAddress>
+			<pmIdent>
+				<pmCode modelIdentCode="MODEL" pmIssuer="00000" pmNumber="00000" pmVolume="00"/>
+				<language countryIsoCode="US" languageIsoCode="en"/>
+				<issueInfo issueNumber="000" inWork="01"/>
+			</pmIdent>
+			<pmAddressItems>
+				<issueDate year="2016" month="01" day="01"/>
+				<pmTitle></pmTitle>
+			</pmAddressItems>
+		</pmAddress>
+		<pmStatus issueType="new">
+			<security securityClassification="01"/>
+			<responsiblePartnerCompany></responsiblePartnerCompany>
+			<originator></originator>
+			  <applic>
+				<displayText>
+				  <simplePara />
+				</displayText>
+			  </applic>
+			  <brexDmRef>
+				<dmRef>
+				  <dmRefIdent>
+					<dmCode modelIdentCode="MODELIC" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+				  </dmRefIdent>
+				</dmRef>
+			  </brexDmRef>
+			  <qualityAssurance>
+				<unverified />
+			  </qualityAssurance>
+		</pmStatus>
+	</identAndStatusSection>
+	<content>
+		<pmEntry></pmEntry>
+	</content>
+</pm>

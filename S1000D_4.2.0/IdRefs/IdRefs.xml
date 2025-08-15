@@ -1,0 +1,271 @@
+<IdRefsRules>
+  <Ids>
+    <elementId name="applic" displayText="./displayText" attributeName="id" 
+               rule="concat('appl-',format-id-number(number(max(ancestor::*[not(parent::*)]//applic/substring-after(@id,'-'))) + count(preceding::applic[not(@id)]) + 1,'{0:000}'))"
+               ></elementId>
+    <elementId name="applicRef" displayText="@applicIdentValue" attributeName="id"
+              rule="concat('appl-',format-id-number(number(max(ancestor::*[not(parent::*)]//applicRef/substring-after(@id,'-'))) + count(preceding::applicRef[not(@id)]) + 1,'{0:000}'))"></elementId>
+	  
+    <elementId name="*" displayText="string('')" attributeName="id" 
+              rule="concat('id-',format-id-number(number(max(ancestor::*[not(parent::*)]//*/substring-after(@id,'-'))) + count(preceding::*[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+
+    <elementId name="classificationActionGroup" displayText="for $ca in child::classificationAction return concat($ca/@actionIdentType,' ',$ca/@year,'-',$ca/@month,'-',$ca/@day,' ',$ca/businessUnit/businessUnitName,' / ',$ca/derivativeSource,codepoints-to-string(10))" attributeName="id"
+               rule="concat('dcg-',format-id-number(number(max(ancestor::*[not(parent::*)]//classificationActionGroup/substring-after(@id,'-'))) + count(preceding::classificationActionGroup[not(@id)]) + 1,'{0:000}'))"></elementId>    
+    
+    <elementId name="acronym" displayText="./acronymTerm" attributeName="id" 
+              rule="concat('acr-',format-id-number(number(max(ancestor::*[not(parent::*)]//acronym/substring-after(@id,'-'))) + count(preceding::acronym[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="footnote" displayText="." attributeName="id" 
+              rule="concat('ftn-',format-id-number(number(max(ancestor::*[not(parent::*)]//footnote/substring-after(@id,'-'))) + count(preceding::footnote[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="warningRef" displayText="@warningIdentNumber" attributeName="id"
+              rule="concat('warnr-',format-id-number(number(max(ancestor::*[not(parent::*)]//warningRef/substring-after(@id,'-'))) + count(preceding::warningRef[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="warning" displayText="." attributeName="id"
+                 rule="concat('warn-',format-id-number(number(max(ancestor::*[not(parent::*)]//warning/substring-after(@id,'-'))) + count(preceding::warning[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="cautionRef" displayText="@cautionIdentNumber" attributeName="id"
+                 rule="concat('cautr-',format-id-number(number(max(ancestor::*[not(parent::*)]//cautionRef/substring-after(@id,'-'))) + count(preceding::cautionRef[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="caution" displayText="." attributeName="id"
+                 rule="concat('caut-',format-id-number(number(max(ancestor::*[not(parent::*)]//caution/substring-after(@id,'-'))) + count(preceding::caution[not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="supportEquipDescr" displayText="name" attributeName="id"
+              rule="concat('seq-',format-id-number(number(max(ancestor::*[not(parent::*)]//supportEquipDescr/substring-after(@id,'-'))) + count(preceding::supportEquipDescr[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="supplyDescr" displayText="name" attributeName="id"
+              rule="concat('sup-',format-id-number(number(max(ancestor::*[not(parent::*)]//supplyDescr/substring-after(@id,'-'))) + count(preceding::supplyDescr[not(@id)]) + 1,'{0:000}'))"></elementId>
+    <elementId name="spareDescr" displayText="name" attributeName="id"
+              rule="concat('spa-',format-id-number(number(max(ancestor::*[not(parent::*)]//spareDescr/substring-after(@id,'-'))) + count(preceding::spareDescr[not(@id)]) + 1,'{0:000}'))"></elementId>    
+    
+    <elementId name="table" displayText="./title" attributeName="id" 
+              rule="concat('tab-',format-id-number(number(max(ancestor::*[not(parent::*)]//table[title]/substring-after(@id,'-'))) + count(preceding::table[title and not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="figure" displayText="./title" attributeName="id" 
+              rule="concat('fig-',format-id-number(number(max(ancestor::*[not(parent::*)]//figure/substring-after(@id,'-'))) + count(preceding::figure[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="graphic" displayText="@infoEntityIdent" attributeName="id"
+              rule="concat(getidornew(parent::*),'-gra-',format-id-number(number(max(parent::*//graphic/tokenize(@id,'-')[last()])) + count(preceding-sibling::graphic[not(@id)]) + 1,'{0:000}'))">
+      <call XPATH="setattr(parent::*,'id')"></call>
+    </elementId>    
+    
+    <elementId name="hotspot" displayText="concat(@applicationStructureIdent,'/',applicationStructureName,'/',@hotspotTitle)" attributeName="id" 
+              rule="concat(getidornew(ancestor::graphic[1]),'-hot-',format-id-number(number(max(ancestor::graphic//hotspot/tokenize(@id,'-')[last()])) + count(preceding::hotspot[not(@id)]) + 1,'{0:000}'))">
+      <call XPATH="setattr(ancestor::graphic[1],'id')"></call>
+    </elementId>
+
+    <elementId name="multimedia" displayText="./title" attributeName="id"
+          rule="concat('mult-',format-id-number(number(max(ancestor::*[not(parent::*)]//multimedia/substring-after(@id,'-'))) + count(preceding::multimedia[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="multimediaObject" displayText="@infoEntityIdent" attributeName="id"
+              rule="concat(getidornew(parent::*),'-mobj-',format-id-number(number(max(parent::*//multimediaObject/tokenize(@id,'-')[last()])) + count(preceding-sibling::multimediaObject[not(@id)]) + 1,'{0:000}'))">
+      <call XPATH="setattr(parent::*,'id')"></call>
+    </elementId>
+
+    <elementId name="parameter" displayText="@parameterName" attributeName="id"
+              rule="concat(getidornew(ancestor::multimediaObject[1]),'-prm-',format-id-number(number(max(ancestor::multimediaObject//parameter/tokenize(@id,'-')[last()])) + count(preceding::parameter[not(@id)]) + 1,'{0:000}'))">
+      <call XPATH="setattr(ancestor::multimediaObject[1],'id')"></call>
+    </elementId>
+
+    <elementId name="zoneRef" displayText="@zoneNumber" attributeName="id"
+                  rule="concat('zone-',format-id-number(number(max(ancestor::*[not(parent::*)]//zoneRef/substring-after(@id,'-'))) + count(preceding::zoneRef[not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="accessPointRef" displayText="@accessPointNumber" attributeName="id"
+                  rule="concat('accpnl-',format-id-number(number(max(ancestor::*[not(parent::*)]//accessPointRef/substring-after(@id,'-'))) + count(preceding::accessPointRef[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="proceduralStep" displayText="concat(transform(self::*,'proceduralStepNumber'),' ',./title)" attributeName="id"
+                rule="concat('stp-',format-id-number(number(max(ancestor::*[not(parent::*)]//proceduralStep/substring-after(@id,'-'))) + count(preceding::proceduralStep[not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="proceduralStepAlts" displayText="concat(transform(self::*,'proceduralStepNumber'),' ',./title)" attributeName="id"
+                rule="concat('stp-',format-id-number(number(max(ancestor::*[not(parent::*)]//proceduralStep/substring-after(@id,'-'))) + count(preceding::proceduralStep[not(@id)]) + 1,'{0:000}'))"></elementId>    
+
+    <elementId name="levelledPara" displayText="concat(transform(self::*,'levelledParaNumber'),' ',./title)" attributeName="id"
+               rule="concat('par-',format-id-number(number(max(ancestor::*[not(parent::*)]//levelledPara/substring-after(@id,'-'))) + count(preceding::levelledPara[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="levelledParaAlts" displayText="concat(transform(self::*,'levelledParaNumber'),' ',./title)" attributeName="id"
+                   rule="concat('par-',format-id-number(number(max(ancestor::*[not(parent::*)]//levelledPara/substring-after(@id,'-'))) + count(preceding::levelledPara[not(@id)]) + 1,'{0:000}'))"></elementId>    
+
+    <elementId name="commonInfoDescrPara" displayText="concat(transform(self::*,'commonInfoDescrParaNumber'),' ',./title)" attributeName="id"
+                   rule="concat('cip-',format-id-number(number(max(ancestor::*[not(parent::*)]//commonInfoDescrPara/substring-after(@id,'-'))) + count(preceding::commonInfoDescrPara[not(@id)]) + 1,'{0:000}'))"></elementId>    
+
+    <elementId name="workLocation" displayText="." attributeName="id"
+                   rule="concat('wloc-',format-id-number(number(max(ancestor::*[not(parent::*)]//workLocation/substring-after(@id,'-'))) + count(preceding::workLocation[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="reasonForUpdate" displayText="." attributeName="id" 
+              rule="concat('rfu-',format-id-number(number(max(ancestor::*[not(parent::*)]//reasonForUpdate/substring-after(@id,'-'))) + count(preceding::reasonForUpdate[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="condType" displayText="name" attributeName="id"
+              rule="concat('ctp-',format-id-number(number(max(ancestor::*[not(parent::*)]//condType/substring-after(@id,'-'))) + count(preceding::condType[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="cond" displayText="name" attributeName="id"
+                rule="concat('cnd-',format-id-number(number(max(ancestor::*[not(parent::*)]//cond/substring-after(@id,'-'))) + count(preceding::cond[not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="productAttribute" displayText="name" attributeName="id"
+               rule="concat('pra-',format-id-number(number(max(ancestor::*[not(parent::*)]//productAttribute/substring-after(@id,'-'))) + count(preceding::productAttribute[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="lcAnswerOption" displayText="." attributeName="id"
+              rule="concat('ao-',format-id-number(number(max(ancestor::*[not(parent::*)]//lcAnswerOption/substring-after(@id,'-'))) + count(preceding::lcAnswerOption[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="lcSequenceOption" displayText="." attributeName="id"
+             rule="concat('so-',format-id-number(number(max(ancestor::*[not(parent::*)]//lcSequenceOption/substring-after(@id,'-'))) + count(preceding::lcSequenceOption[not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="lcMatchingPair" displayText="concat(lcItem,' - ',lcMatchingItem)" attributeName="id"
+                 rule="concat('mp-',format-id-number(number(max(ancestor::*[not(parent::*)]//lcMatchingPair/substring-after(@id,'-'))) + count(preceding::lcMatchingPair[not(@id)]) + 1,'{0:000}'))"></elementId>
+    
+    <elementId name="isolationStep" displayText="concat(transform(self::*,'isolationStepNumbering'),' ',./title,' ',./action)" attributeName="id"
+                  rule="concat('stp-',format-id-number(number(max(ancestor::*[not(parent::*)]//*[local-name()='isolationStep' or local-name()='isolationProcedureEnd']/substring-after(@id,'-'))) + count(preceding::*[(local-name()='isolationStep' or local-name()='isolationProcedureEnd') and not(@id)]) + 1,'{0:000}'))"></elementId>
+
+    <elementId name="isolationProcedureEnd" displayText="concat(transform(self::*,'isolationStepNumbering'),' ',./title,' ',./action)" attributeName="id"
+                  rule="concat('stp-',format-id-number(number(max(ancestor::*[not(parent::*)]//*[local-name()='isolationStep' or local-name()='isolationProcedureEnd']/substring-after(@id,'-'))) + count(preceding::*[(local-name()='isolationStep' or local-name()='isolationProcedureEnd') and not(@id)]) + 1,'{0:000}'))"></elementId>    
+    
+  </Ids>
+  
+  <RefIds>
+
+    <elementRefId name="derivativeClassificationRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//classificationActionGroup"></element>
+    </elementRefId>
+
+    <elementRefId name="applicRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//content//*[local-name()='applic' or local-name()='applicRef']"></element>
+    </elementRefId>
+    
+    <elementRefId name="applicMapRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//content//applic"></element>
+    </elementRefId>		  
+		  
+    <elementRefId name="dependencyTest" XPATH=".">
+     <element XPATH="ancestor-or-self::*[not(parent::*)]//content//*[local-name()='applic' or local-name()='applicRef']"></element>
+    </elementRefId>
+    
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt01'" category="tlp_interface_figure">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//figure"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt02'" category="tlp_interface_table">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//table[title]"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt03'" category="tlp_interface_multimedia">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//multimedia"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt04'" category="tlp_interface_supply">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//supplyDescr"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt05'" category="tlp_interface_support_equipment">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//supportEquipDescr"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt06'" category="tlp_interface_spare">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//spareDescr"></element>
+    </elementRefId>
+    
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt07'" category="tlp_interface_para">
+      <element XPATH="
+               ancestor-or-self::*[not(parent::*)]//levelledPara|
+               ancestor-or-self::*[not(parent::*)]//levelledParaAlts|
+               ancestor-or-self::*[not(parent::*)]//commonInfoDescrPara|
+               ancestor-or-self::*[not(parent::*)]//commonInfoDescrParaAlts"></element>
+    </elementRefId>
+    
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt08'" category="tlp_interface_step">
+      <element XPATH="
+               ancestor-or-self::*[not(parent::*)]//proceduralStep|
+               ancestor-or-self::*[not(parent::*)]//proceduralStepAlts"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt09'" category="tlp_interface_graphic">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//graphic"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt10'" category="tlp_interface_multimedia_object">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//multimediaObject"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt11'" category="tlp_interface_hotspot">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//hotspot"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt12'" category="tlp_interface_parameter">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//parameter"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt13'" category="tlp_interface_zone">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//productionMaintData//zoneRef"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt14'" category="tlp_interface_work_location">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//workLocation"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt15'" category="tlp_interface_material_set">
+      <element XPATH="
+               ancestor-or-self::*[not(parent::*)]//sbMaterialSet|
+               ancestor-or-self::*[not(parent::*)]//sbSupportEquipSet|
+               ancestor-or-self::*[not(parent::*)]//sbIndividualSupportEquip|
+               ancestor-or-self::*[not(parent::*)]//sbExternalSupportEquipSet|
+               ancestor-or-self::*[not(parent::*)]//sbSupplySet|
+               ancestor-or-self::*[not(parent::*)]//sbIndividualSupply|
+               ancestor-or-self::*[not(parent::*)]//sbExternalSupplySet|
+               ancestor-or-self::*[not(parent::*)]//sbSpareSet|
+               ancestor-or-self::*[not(parent::*)]//sbIndividualSpare|
+               ancestor-or-self::*[not(parent::*)]//sbExternalSpareSet|
+               ancestor-or-self::*[not(parent::*)]//sbRemovedSpareSet|
+               ancestor-or-self::*[not(parent::*)]//sbIndividualRemovedSpare"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="@internalRefTargetType='irtt16'" category="tlp_interface_access_point">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//productionMaintData//accessPointRef"></element>
+    </elementRefId>
+
+    
+    <elementRefId name="internalRefId" XPATH="self::acronymTerm">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//acronym"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="self::footnoteRef">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//footnote"></element>
+    </elementRefId>
+    <elementRefId name="internalRefId" XPATH="not(@internalRefTargetType) and self::internalRef[parent::lcFeedbackItem] and (ancestor::lcSingleSelect or ancestor::lcTrueFalse or ancestor::lcMultipleSelect or ancestor::lcCompletion)">
+      <element XPATH="ancestor-or-self::*[local-name()='lcSingleSelect' or local-name()='lcTrueFalse' or local-name()='lcMultipleSelect' or local-name()='lcCompletion']//lcAnswerOption"></element>
+    </elementRefId>
+    
+    <elementRefId name="internalRefId" XPATH="not(@internalRefTargetType) and self::internalRef[parent::lcFeedbackItem] and ancestor::lcSequencing">
+      <element XPATH="ancestor-or-self::lcSequencing//lcSequenceOption"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="not(@internalRefTargetType) and self::internalRef[parent::lcFeedbackItem] and (ancestor::lcMatching or ancestor::lcDragAndDrop)">
+      <element XPATH="ancestor-or-self::*[local-name()='lcMatching' or local-name()='lcDragAndDrop']//lcMatchingPair"></element>
+    </elementRefId>
+
+    <elementRefId name="internalRefId" XPATH="not(@internalRefTargetType) and self::internalRef[parent::lcFeedbackItem] and ancestor::lcHotspot">
+      <element XPATH="ancestor-or-self::lcHotspot//hotspot"></element>
+    </elementRefId>
+
+
+    <elementRefId name="internalRefId" XPATH="self::warning">
+      <element XPATH="
+               ancestor-or-self::*[not(parent::*)]//warningsAndCautions//warning|
+               ancestor::*[not(parent::*)]//warningsAndCautionsRef//warningRef"></element>
+    </elementRefId>
+    <elementRefId name="reasonForUpdateRefIds" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//reasonForUpdate"></element>
+    </elementRefId>
+    <elementRefId name="warningRefs" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//content/*[local-name()='warningsAndCautions' or local-name()='warningsAndCautionsRef']//*[local-name()='warning' or local-name()='warningRef']"></element>
+    </elementRefId>
+    <elementRefId name="cautionRefs" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//content/*[local-name()='warningsAndCautions' or local-name()='warningsAndCautionsRef']//*[local-name()='caution' or local-name()='cautionRef']"></element>
+    </elementRefId>
+    <elementRefId name="condTypeRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//condType"></element>
+    </elementRefId>
+    <elementRefId name="condRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::*[not(parent::*)]//cond"></element>
+    </elementRefId>
+    <elementRefId name="applicPropertyIdent" XPATH="self::*[@applicPropertyType='condition']">
+      <element XPATH="getdocument(geturnfromref(getdocument(geturnfromref(ancestor-or-self::*[not(parent::*)]//applicCrossRefTableRef))//condCrossRefTableRef))//*[local-name()='cond' or (local-name()='externalAssert' and @applicPropertyType='condition')]"></element>
+    </elementRefId>
+    <elementRefId name="applicPropertyIdent" XPATH="self::*[@applicPropertyType='prodattr']">
+      <element XPATH="getdocument(geturnfromref(ancestor-or-self::*[not(parent::*)]//applicCrossRefTableRef))//*[local-name()='productAttribute' or (local-name()='externalAssert' and @applicPropertyType='prodattr')]"></element>
+    </elementRefId>
+    <elementRefId name="applicPropertyIdent" XPATH="self::*[not(@applicPropertyType) or (@applicPropertyType!='prodattr' and @applicPropertyType!='condition')]">
+      <element XPATH="getdocument(geturnfromref(getdocument(geturnfromref(ancestor-or-self::*[not(parent::*)]//applicCrossRefTableRef))//condCrossRefTableRef))//*[local-name()='cond' or (local-name()='externalAssert' and @applicPropertyType='condition')]|getdocument(geturnfromref(ancestor-or-self::*[not(parent::*)]//applicCrossRefTableRef))//*[local-name()='productAttribute' or (local-name()='externalAssert' and @applicPropertyType='prodattr')]"></element>
+    </elementRefId>
+
+    <elementRefId name="nextActionRefId" XPATH=".">
+      <element XPATH="ancestor-or-self::faultIsolationProcedure//isolationStep|
+               ancestor-or-self::faultIsolationProcedure//isolationProcedureEnd|
+               ancestor-or-self::faultIsolationProcedure//isolationStepAlts|
+               ancestor-or-self::faultIsolationProcedure//isolationProcedureEndAlts"></element>
+    </elementRefId>
+  </RefIds>
+</IdRefsRules>

@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<formatting>
+
+  <!--<rule id="sortingTable" enabledXPath="boolean(count(table)=1 and count(node())=count(table) and table[count(tgroup)=1 and not(.//@morerows) and not(.//@spanstart)])" mainElement="parent::*" popup="true">
+    <displayText>
+      <text lang="en">concat('Sorting table by first column (A)','')</text>
+      <text lang="ru">concat('Сортировка таблицы по первой колонке (А)','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <legend></legend>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            
+            <xsl:copy-of select="xef:SmartUpperCase(./node(),string(.))"></xsl:copy-of>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>-->
+
+  <rule id="smartQuotes" enabledXPath="boolean(.//text())" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Put air quotes','')</text>
+      <text lang="ru">concat('Взять в кавычки','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements></Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:copy-of select="xef:ApplyQuotes(./node(),string(.))"></xsl:copy-of>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+  <rule id="toTitle" enabledXPath="boolean(count(para)=1 and count(node())=1 and para[not(preceding-sibling::*) and not(preceding-sibling::*) and not(sequentialList) and not(randomList) and not(definitionList)] and parent::*[(local-name()='levelledPara' or local-name()='proceduralStep') and not(title)])" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="title16.png">
+    <displayText>
+      <text lang="en">concat('To title','')</text>
+      <text lang="ru">concat('В заголовок','')</text>
+    </displayText>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <xsl:copy>
+            <title>
+              <xsl:apply-templates select="para/@*"></xsl:apply-templates>
+              <xsl:apply-templates select="para/node()"></xsl:apply-templates>
+            </title>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="*[not(parent::*)]">
+          <rootLibroplanta>
+            <xsl:copy>
+              <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+            </xsl:copy>
+          </rootLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="legend2Table" enabledXPath="boolean((ancestor-or-self::legend and count(node())=0) or (count(*)=1 and count(legend)=1))" mainElement="ancestor-or-self::figure" contextMenuOrPopup="ContextMenu" image="table16.png">
+    <displayText>
+      <text lang="en">concat('legend to table','')</text>
+      <text lang="ru">concat('В таблицу','')</text>
+    </displayText>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <xsl:apply-templates select="node()"></xsl:apply-templates>
+        </xsl:template>
+        <xsl:template match="figure">
+          <rootLibroplanta>
+            <selectionLibroplanta>
+              <xsl:copy>
+                <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+              </xsl:copy>
+              <xsl:element name="table">
+                <xsl:apply-templates select=".//legend//definitionList/title"></xsl:apply-templates>
+                <tgroup cols="3">
+                  <colspec colname="col1" colwidth="1*"></colspec>
+                  <colspec colname="col2" colwidth="4*"></colspec>
+                  <colspec colname="col3" colwidth="4*"></colspec>
+                  <xsl:for-each select=".//legend//definitionList//definitionListHeader">
+                    <thead>
+                      <row>
+                        <entry>
+                          <para>
+                            <xsl:apply-templates select="termTitle/node()"></xsl:apply-templates>
+                          </para>
+                        </entry>
+                        <entry>
+                          <para>
+                            <xsl:apply-templates select="definitionTitle/node()"></xsl:apply-templates>
+                          </para>
+                        </entry>
+                        <entry>
+                          <para/>
+                        </entry>
+                      </row>
+                    </thead>
+                  </xsl:for-each>
+                  <tbody>
+                    <xsl:for-each select=".//legend//definitionList//definitionListItem">
+                      <row>
+                        <entry>
+                          <para>
+                            <xsl:apply-templates select="listItemTerm/node()"></xsl:apply-templates>
+                          </para>
+                        </entry>
+                        <entry>
+                          <xsl:apply-templates select="listItemDefinition/para"></xsl:apply-templates>
+                        </entry>
+                        <entry>
+                          <para/>
+                        </entry>
+                      </row>
+                    </xsl:for-each>
+                  </tbody>
+                </tgroup>
+              </xsl:element>
+            </selectionLibroplanta>
+          </rootLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+  
+  <rule id="smartUpperCase" enabledXPath="boolean(.//text())" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Text to randomList','')</text>
+      <text lang="ru">concat('Текст в ненуменрованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements></Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+              <xsl:copy-of select="xef:SmartUpperCase(./node(),string(.))"></xsl:copy-of>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="text2RandomList" enabledXPath="boolean(matches(text(),'\w+[,;]') and not(*) and (not(following-sibling::node()) or (count(following-sibling::text())=1 and following-sibling::text()='')))" mainElement="parent::*" contextMenuOrPopup="ContextMenu">
+    <displayText>
+      <text lang="en">concat('Text to randomList','')</text>
+      <text lang="ru">concat('Текст в ненуменрованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <randomList></randomList>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <randomList>
+              <xsl:for-each select="xef:TokenizeRegExp(string(.),'[;,]\s*')">
+                <listItem>
+                  <para>
+                    <xsl:value-of select="."></xsl:value-of>
+                  </para>
+                </listItem>
+              </xsl:for-each>
+            </randomList>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="text2SequentialList" enabledXPath="boolean(matches(text(),'\w+[,;]') and not(*) and (not(following-sibling::node()) or (count(following-sibling::text())=1 and following-sibling::text()='')))" mainElement="parent::*" contextMenuOrPopup="ContextMenu">
+    <displayText>
+      <text lang="en">concat('Text to randomList','')</text>
+      <text lang="ru">concat('Текст в нуменрованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <sequentialList></sequentialList>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <sequentialList>
+              <xsl:for-each select="xef:TokenizeRegExp(string(.),'[;,]\s*')">
+                <listItem>
+                  <para>
+                    <xsl:value-of select="."></xsl:value-of>
+                  </para>
+                </listItem>
+              </xsl:for-each>
+            </sequentialList>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+
+  <rule id="definitionList2Table" 
+        enabledXPath="
+        boolean(
+        count(para)=1 
+        and count(node())=count(para) 
+        and para[count(definitionList)=1 and count(*)=count(definitionList)]
+        )" 
+        mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="table16.png">
+    <displayText>
+      <text lang="en">concat('definitionList to table','')</text>
+      <text lang="ru">concat('В таблицу','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <table></table>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:if test="para/text()">
+              <xsl:element name="para"><xsl:value-of select="para/text()"></xsl:value-of></xsl:element>
+            </xsl:if>
+            <xsl:element name="table">
+              <xsl:copy-of select="para/definitionList/title"></xsl:copy-of>
+              <tgroup cols="2">
+                <colspec colname="col1" colwidth="1*"></colspec>
+                <colspec colname="col2" colwidth="4*"></colspec>
+                <xsl:for-each select="para/definitionList/definitionListHeader">
+                  <thead>
+                    <row>
+                      <entry>
+                        <para>
+                          <xsl:copy-of select="termTitle/node()"></xsl:copy-of>
+                        </para>
+                      </entry>
+                      <entry>
+                        <para>
+                          <xsl:copy-of select="definitionTitle/node()"></xsl:copy-of>
+                        </para>
+                      </entry>
+                    </row>
+                  </thead>
+                </xsl:for-each>
+                <tbody>
+                  <xsl:for-each select="para/definitionList/definitionListItem">
+                      <row>
+                        <entry>
+                          <para>
+                            <xsl:copy-of select="listItemTerm/node()"></xsl:copy-of>
+                          </para>
+                        </entry>
+                        <entry>
+                          <xsl:copy-of select="listItemDefinition/para"></xsl:copy-of>
+                        </entry>
+                      </row>
+                  </xsl:for-each>
+                </tbody>
+              </tgroup>
+            </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>   
+  
+  
+  
+  <rule id="table2DefinitionList"
+        enabledXPath="boolean(count(table)=1 and count(node())=count(table) and table[count(tgroup)=1 and count(tgroup/colspec)=2 and not(tgroup/tfoot) and not(tgroup//entry[count(para) &gt; 1]) and not(.//@morerows) and not(.//@spanstart)])" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="deflist16.png">
+    <displayText>
+      <text lang="en">concat('Table to definitionList','')</text>
+      <text lang="ru">concat('В перечень определений','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <para>
+          <definitionList></definitionList>
+        </para>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:element name="para">
+              <xsl:element name="definitionList">
+                  <xsl:copy-of select="table/title"></xsl:copy-of>
+                  <xsl:for-each select=".//thead/row">
+                    <definitionListHeader>
+                      <termTitle>
+                        <xsl:choose>
+                          <xsl:when test=".//entry[1]/para">
+                            <xsl:copy-of select=".//entry[1]/para/node()"></xsl:copy-of>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:copy-of select=".//entry[1]/node()"></xsl:copy-of>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                      </termTitle>
+                      <definitionTitle>
+                        <xsl:choose>
+                          <xsl:when test=".//entry[2]/para">
+                            <xsl:copy-of select=".//entry[2]/para/node()"></xsl:copy-of>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:copy-of select=".//entry[2]/node()"></xsl:copy-of>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                      </definitionTitle>
+                    </definitionListHeader>
+                  </xsl:for-each>
+                  <xsl:for-each select=".//tbody/row">
+                    <definitionListItem>
+                      <listItemTerm>
+                        <xsl:choose>
+                          <xsl:when test=".//entry[1]/para">
+                            <xsl:copy-of select=".//entry[1]/para/node()"></xsl:copy-of>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:copy-of select=".//entry[1]/node()"></xsl:copy-of>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                      </listItemTerm>
+                      <listItemDefinition>
+                        <xsl:copy-of select=".//entry[2]/*"></xsl:copy-of>
+                      </listItemDefinition>
+                    </definitionListItem>
+                  </xsl:for-each>
+              </xsl:element>
+            </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="paras2RandomList" enabledXPath="boolean(count(node())=count(para) and count(para) &gt; 1)" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="randlist16.png">
+    <displayText>
+      <text lang="en">concat('Convert to nested randomList','')</text>
+      <text lang="ru">concat('Во вложенный ненумерованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <para>
+          <randomList></randomList>
+        </para>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:element name="para">
+              <xsl:choose>
+                <xsl:when test="xef:XPATH2V(para[1],'matches(.,&quot;.+:\s*$&quot;)')">
+                  <xsl:for-each select="para[1]">
+                    <xsl:copy-of select="@*"></xsl:copy-of>
+                    <xsl:copy-of select="node()"></xsl:copy-of>
+                  </xsl:for-each>
+                  <xsl:element name="randomList">
+                    <xsl:for-each select="para[position()!=1]">
+                      <xsl:element name="listItem">
+                        <xsl:copy-of select="."/>
+                      </xsl:element>
+                    </xsl:for-each>
+                  </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:element name="randomList">
+                    <xsl:for-each select="para">
+                      <xsl:element name="listItem">
+                        <xsl:copy-of select="."/>
+                      </xsl:element>
+                    </xsl:for-each>
+                  </xsl:element>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="listItems2RandomList" enabledXPath="boolean(count(./node())=count(./listItem) and count(listItem) &gt; 0)" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="randlist16.png">
+    <displayText>
+      <text lang="en">concat('Convert to nested randomList','')</text>
+      <text lang="ru">concat('Во вложенный ненумерованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <listItem>
+          <para>
+            <randomList></randomList>
+          </para>
+        </listItem>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:element name="listItem">
+                <xsl:choose>
+                  <xsl:when test="not(listItem[1]/note) and xef:XPATH2V(listItem[1],'matches(.,&quot;.+:\s*$&quot;)')">
+                    <xsl:for-each select="listItem[1]">
+                      <xsl:copy-of select="@*"></xsl:copy-of>
+                      <xsl:copy-of select="para[position()!=last()]"></xsl:copy-of>
+                      <xsl:for-each select="para[position()=last()]">
+                        <xsl:element name="para">
+                          <xsl:copy-of select="@*"></xsl:copy-of>
+                          <xsl:copy-of select="node()"></xsl:copy-of>
+                          <xsl:element name="randomList">
+                            <xsl:for-each select="parent::*/following-sibling::listItem">
+                                <xsl:copy-of select="."/>
+                            </xsl:for-each>
+                          </xsl:element>
+                        </xsl:element>
+                      </xsl:for-each>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:element name="para">
+                      <xsl:element name="randomList">
+                        <xsl:for-each select="listItem">
+                            <xsl:copy-of select="."/>
+                        </xsl:for-each>
+                      </xsl:element>
+                    </xsl:element>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+
+
+  <rule id="paras2SequentialList" enabledXPath="boolean(count(node())=count(para) and count(para) &gt; 1)" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="seqlist16.png">
+    <displayText>
+      <text lang="en">concat('Convert to nested sequentialList','')</text>
+      <text lang="ru">concat('Во вложенный нумерованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <para>
+          <sequentialList></sequentialList>
+        </para>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:element name="para">
+              <xsl:choose>
+                <xsl:when test="xef:XPATH2V(para[1],'matches(.,&quot;.+:\s*$&quot;)')">
+                  <xsl:for-each select="para[1]">
+                    <xsl:copy-of select="@*"></xsl:copy-of>
+                    <xsl:copy-of select="node()"></xsl:copy-of>
+                  </xsl:for-each>
+                  <xsl:element name="sequentialList">
+                    <xsl:for-each select="para[position()!=1]">
+                      <xsl:element name="listItem">
+                        <xsl:copy-of select="."/>
+                      </xsl:element>
+                    </xsl:for-each>
+                  </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:element name="sequentialList">
+                    <xsl:for-each select="para">
+                      <xsl:element name="listItem">
+                        <xsl:copy-of select="."/>
+                      </xsl:element>
+                    </xsl:for-each>
+                  </xsl:element>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="listItems2SequentialList" enabledXPath="boolean(count(./node())=count(./listItem) and count(listItem) &gt; 0)" mainElement="parent::*" contextMenuOrPopup="ContextMenu" image="seqlist16.png">
+    <displayText>
+      <text lang="en">concat('Convert to nested sequentialList','')</text>
+      <text lang="ru">concat('Во вложенный нумерованный список','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <listItem>
+          <para>
+            <randomList></randomList>
+          </para>
+        </listItem>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <selectionLibroplanta>
+            <xsl:element name="listItem">
+              <xsl:choose>
+                <xsl:when test="not(listItem[1]/note) and xef:XPATH2V(listItem[1],'matches(.,&quot;.+:\s*$&quot;)')">
+                  <xsl:for-each select="listItem[1]">
+                    <xsl:copy-of select="@*"></xsl:copy-of>
+                    <xsl:copy-of select="para[position()!=last()]"></xsl:copy-of>
+                    <xsl:for-each select="para[position()=last()]">
+                      <xsl:element name="para">
+                        <xsl:copy-of select="@*"></xsl:copy-of>
+                        <xsl:copy-of select="node()"></xsl:copy-of>
+                        <xsl:element name="sequentialList">
+                          <xsl:for-each select="parent::*/following-sibling::listItem">
+                            <xsl:copy-of select="."/>
+                          </xsl:for-each>
+                        </xsl:element>
+                      </xsl:element>
+                    </xsl:for-each>
+                  </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:element name="para">
+                    <xsl:element name="sequentialList">
+                      <xsl:for-each select="listItem">
+                        <xsl:copy-of select="."/>
+                      </xsl:for-each>
+                    </xsl:element>
+                  </xsl:element>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:element>
+          </selectionLibroplanta>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>  
+  
+ <rule id="validateHotspots" enabledXPath="boolean(ancestor-or-self::graphic and getnotation(ancestor-or-self::graphic/@infoEntityIdent))" mainElement="ancestor-or-self::graphic[1]" contextMenuOrPopup="ContextMenu" image="validateHotspots16.png" void="validateHotspots">
+    <displayText>
+      <text lang="en">concat('Validate hotspots','')</text>
+      <text lang="ru">concat('Валидировать активные области','')</text>
+    </displayText>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+	      <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"></xsl:param>
+	      <xsl:template match="@*|node()">
+		      <xsl:copy>
+			      <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		      </xsl:copy>
+	      </xsl:template>
+	      <xsl:template match="graphic">
+          <xsl:variable name="graphic" select="self::*"></xsl:variable>
+          <xsl:copy>
+			      <xsl:apply-templates select="@*"></xsl:apply-templates>
+            <selectionLibroplanta>
+              <xsl:apply-templates select="node()"></xsl:apply-templates>
+              <xsl:for-each select="$externalData//hotspot">
+                <xsl:variable name="apsid" select="@applicationStructureIdent"></xsl:variable>
+                <xsl:variable name="apsname" select="@applicationStructureName"></xsl:variable>
+                <xsl:variable name="title" select="@hotspotTitle"></xsl:variable>
+                <xsl:choose>
+                  <xsl:when test="not($apsid = $graphic//hotspot/@applicationStructureIdent)">
+                    <xsl:copy-of select="."></xsl:copy-of>
+                  </xsl:when>
+                  <xsl:otherwise>
+
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each>
+            </selectionLibroplanta>
+		      </xsl:copy>
+	      </xsl:template>   
+	      <xsl:template match="hotspot">
+          <xsl:variable name="apsid" select="@applicationStructureIdent"></xsl:variable>
+          <xsl:variable name="apsname" select="@applicationStructureName"></xsl:variable>
+          <xsl:variable name="title" select="@hotspotTitle"></xsl:variable>
+          <xsl:choose>
+            <xsl:when test="$apsid = $externalData//hotspot/@applicationStructureIdent">
+		          <xsl:copy>
+			          <xsl:apply-templates select="@*"></xsl:apply-templates>
+                <xsl:choose>
+                  <xsl:when test="@applicationStructureName">
+                    <xsl:choose>
+                      <xsl:when test="$externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName and @applicationStructureName!=$externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName">
+                        <xsl:attribute name="applicationStructureName"><xsl:value-of select="$externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName"/></xsl:attribute>
+                      </xsl:when>
+                      <xsl:otherwise></xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:if test="$externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName and $externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName!=''">
+                       <xsl:attribute name="applicationStructureName"><xsl:value-of select="$externalData//hotspot[@applicationStructureIdent=$apsid]/@applicationStructureName"/></xsl:attribute>
+                    </xsl:if>
+                  </xsl:otherwise>
+                </xsl:choose>
+                <xsl:choose>
+                  <xsl:when test="@hotspotTitle">
+                    <xsl:choose>
+                      <xsl:when test="$externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle and @hotspotTitle!=$externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle">
+                        <xsl:attribute name="hotspotTitle"><xsl:value-of select="$externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle"/></xsl:attribute>
+                      </xsl:when>
+                      <xsl:otherwise></xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:if test="$externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle and $externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle!=''">
+                       <xsl:attribute name="hotspotTitle"><xsl:value-of select="$externalData//hotspot[@applicationStructureIdent=$apsid]/@hotspotTitle"/></xsl:attribute>
+                    </xsl:if>
+                  </xsl:otherwise>
+                </xsl:choose>
+                <xsl:apply-templates select="node()"></xsl:apply-templates>
+		          </xsl:copy>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:copy>
+			          <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+              </xsl:copy>
+            </xsl:otherwise>
+          </xsl:choose>
+	      </xsl:template>
+	     <xsl:template match="selectionLibroplanta">
+         <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+       </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+  
+  <rule id="generateLegend" enabledXPath="boolean(ancestor-or-self::figure//hotspot)" mainElement="ancestor-or-self::figure[1]" contextMenuOrPopup="ContextMenu" image="generateLegend16.png">
+    <displayText>
+      <text lang="en">concat('Generate legend','')</text>
+      <text lang="ru">concat('Сгенерировать легенду','')</text>
+    </displayText>    
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+	      <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+	      <xsl:template match="@*|node()">
+		      <xsl:copy>
+			      <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		      </xsl:copy>
+	      </xsl:template>
+	      <xsl:template match="figure">
+          <xsl:variable name="id" select="generate-id()"></xsl:variable>
+          <xsl:variable name="legend">
+          <selectionLibroplanta>
+                <xsl:if test=".//hotspot">
+                  <legend>
+                    <definitionList>
+                      <xsl:for-each select=".//hotspot">
+                        <xsl:sort select="xef:SortByStartNumberAsNumber(@applicationStructureName)" data-type="number"></xsl:sort>
+                        <xsl:sort select="string-length(@applicationStructureName)" data-type="number"></xsl:sort>
+                        <xsl:variable name="applicationStructureName" select="@applicationStructureName"></xsl:variable>
+                        <xsl:if test="not(preceding::hotspot[@applicationStructureName=$applicationStructureName and ancestor::figure[generate-id()=$id]])">
+                        <definitionListItem>
+                          <listItemTerm>
+                            <internalRef internalRefTargetType="irtt11">
+                              <xsl:attribute name="internalRefId">
+                                  <xsl:value-of select="xef:XPATH2V(.,'setattr(self::*,&quot;id&quot;)')"></xsl:value-of>
+                              </xsl:attribute>
+                            </internalRef>
+                          </listItemTerm>
+                          <listItemDefinition>
+                            <para><xsl:value-of select="@hotspotTitle"></xsl:value-of></para>
+                          </listItemDefinition>
+                        </definitionListItem>
+                          </xsl:if>
+                      </xsl:for-each>
+                    </definitionList>
+                  </legend>
+                </xsl:if>
+            </selectionLibroplanta>
+          </xsl:variable>
+          <xsl:message terminate="no"><xsl:value-of select="$legend"/></xsl:message>
+		      <xsl:copy>
+			      <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+            <xsl:copy-of select="$legend"/>
+		      </xsl:copy>
+	      </xsl:template>   
+	      <xsl:template match="legend"></xsl:template>          
+	     <xsl:template match="selectionLibroplanta">
+         <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+       </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>  
+  
+  <rule id="internalRef" enabledXPath="true()" insertMode="Outter" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert internal ref','')</text>
+      <text lang="ru">concat('Вставить внутреннюю ссылку','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <internalRef></internalRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  
+  <rule id="acronymTerm" enabledXPath="true()" mainElement="parent::*" >
+    <displayText>
+      <text lang="en">concat('Insert acronym ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на акроним','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <acronymTerm></acronymTerm>
+      </Elements>
+    </allowedContent>
+  </rule>
+  
+  <rule id="acronym" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert acronym','')</text>
+      <text lang="ru">concat('Вставить акроним','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <acronym></acronym>
+      </Elements>
+    </allowedContent>
+  </rule>
+  
+  <rule id="footnoteRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert footnote ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на сноску','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <footnoteRef></footnoteRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+  <rule id="quantity" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Q','')</text>
+      <text lang="ru">concat('Q','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <quantity></quantity>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+  <rule id="DMRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert DM ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на модуль данных','')</text>
+    </displayText>        
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <dmRef></dmRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+  <rule id="PMRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert PM ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на публикационный модуль','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <pmRef></pmRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+	<rule id="CSNRef" enabledXPath="true()" mainElement="parent::*">
+		<displayText>
+			<text lang="en">concat('Insert CSN ref','')</text>
+			<text lang="ru">concat('Вставить ссылку на номер по иллюстрированному каталогу','')</text>
+		</displayText>
+		<allowedContent CheckMultiple="True">
+			<Elements>
+				<catalogSeqNumberRef></catalogSeqNumberRef>
+			</Elements>
+		</allowedContent>
+	</rule>
+
+	<rule id="ExternalPubRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert External PM ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на неразрабатываемое руководство','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <externalPubRef></externalPubRef>
+      </Elements>
+    </allowedContent>
+  </rule>   
+  
+  <rule id="refs" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert refs','')</text>
+      <text lang="ru">concat('Вставить ссылки','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <refs></refs>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+	<rule id="referTo" enabledXPath="true()" mainElement="parent::*">
+		<displayText>
+			<text lang="en">concat('Insert refs','')</text>
+			<text lang="ru">concat('Вставить ссылки','')</text>
+		</displayText>
+		<allowedContent CheckMultiple="False">
+			<Elements>
+				<referTo></referTo>
+			</Elements>
+		</allowedContent>
+	</rule>	
+	
+  <rule id="functionalItemRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert functional item ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на функциональную единицу','')</text>
+    </displayText>        
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <functionalItemRef></functionalItemRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="functionalItemSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert functional item spec','')</text>
+      <text lang="ru">concat('Вставить функциональную единицу','')</text>
+    </displayText>        
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <functionalItemSpec></functionalItemSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="circuitBreakerRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert circuit breaker ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на автомат защиты сети','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <circuitBreakerRef></circuitBreakerRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="circuitBreakerSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert circuit breaker','')</text>
+      <text lang="ru">concat('Вставить автомат защиты сети','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <circuitBreakerSpec></circuitBreakerSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="partRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert part ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на деталь','')</text>
+    </displayText>          
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <partRef></partRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="partSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert part','')</text>
+      <text lang="ru">concat('Вставить деталь','')</text>
+    </displayText>          
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <partSpec></partSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="zoneRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert zone ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на зону','')</text>
+    </displayText>              
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <zoneRef></zoneRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="zoneSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert zone','')</text>
+      <text lang="ru">concat('Вставить зону','')</text>
+    </displayText>              
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <zoneSpec></zoneSpec>
+      </Elements>
+    </allowedContent>
+  </rule>
+
+  <rule id="accessPointRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert access point ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на точку доступа','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <accessPointRef></accessPointRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="accessPointSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert access point','')</text>
+      <text lang="ru">concat('Вставить точку доступа','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <accessPointSpec></accessPointSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="toolRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert tool ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на инструмент','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <toolRef></toolRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="toolSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert tool','')</text>
+      <text lang="ru">concat('Вставить инструмент','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <toolSpec></toolSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="enterpriseRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert enterprise ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на организацию','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <enterpriseRef></enterpriseRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="enterpriseSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert enterprise','')</text>
+      <text lang="ru">concat('Вставить организацию','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <enterpriseSpec></enterpriseSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="supplyRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert supply ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на расходуемый материал','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <supplyRef></supplyRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="supplySpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert supply','')</text>
+      <text lang="ru">concat('Вставить расходуемый материал','')</text>
+    </displayText>       
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <supplySpec></supplySpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="supplyRqmtRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert supply requirement ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на требования к расходуемому материалу','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <supplyRqmtRef></supplyRqmtRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="supplyRqmtSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert supply requirement','')</text>
+      <text lang="ru">concat('Вставить требования к расходуемому материалу','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <supplyRqmtSpec></supplyRqmtSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="functionalPhysicalAreaRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert functional physical ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на физическо-функциональную область','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <functionalPhysicalAreaRef></functionalPhysicalAreaRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="functionalPhysicalAreaSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert functional physical','')</text>
+      <text lang="ru">concat('Вставить физическо-функциональную область','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <functionalPhysicalAreaSpec></functionalPhysicalAreaSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="controlIndicatorRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert control indicator ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на органы управления и индикации','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <controlIndicatorRef></controlIndicatorRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="controlIndicatorSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert control indicator','')</text>
+      <text lang="ru">concat('Вставить органы управления и индикации','')</text>
+    </displayText>      
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <controlIndicatorSpec></controlIndicatorSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="applicRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert applic ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на применимость','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <applicRef></applicRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="applicSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert applic','')</text>
+      <text lang="ru">concat('Вставить применимость','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <applicSpec></applicSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="warningRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert warning ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на предупреждение','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <warningRef></warningRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="warningSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert warning','')</text>
+      <text lang="ru">concat('Вставить предупреждение','')</text>
+    </displayText>    
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <warningSpec></warningSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+  
+  <rule id="cautionRef" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert caution ref','')</text>
+      <text lang="ru">concat('Вставить ссылку на предостережение','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <cautionRef></cautionRef>
+      </Elements>
+    </allowedContent>
+  </rule>
+  <rule id="cautionSpec" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert caution','')</text>
+      <text lang="ru">concat('Вставить предостережение','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="True">
+      <Elements>
+        <cautionSpec></cautionSpec>
+      </Elements>
+    </allowedContent>
+  </rule>	
+
+  <rule id="bold" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="bold16.png">
+    <displayText>
+      <text lang="en">concat('Bold','')</text>
+      <text lang="ru">concat('Жирный','')</text>
+    </displayText>     
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <emphasis></emphasis>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	      <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+	      <xsl:template match="@*|node()">
+		      <xsl:copy>
+			      <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		      </xsl:copy>
+	      </xsl:template>
+	      <xsl:template match="selectionLibroplanta">
+				      <xsl:element name="emphasis">
+					      <xsl:attribute name="emphasisType">em01</xsl:attribute>
+					      <xsl:copy>
+					      <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+					      </xsl:copy>
+				      </xsl:element>
+	      </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+  
+  <rule id="italic" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="italic16.png">
+    <displayText>
+      <text lang="en">concat('Italic','')</text>
+      <text lang="ru">concat('Курсив','')</text>
+    </displayText>      
+     <allowedContent CheckMultiple="False">
+      <Elements>
+        <emphasis></emphasis>
+      </Elements>
+    </allowedContent>
+    <xslt>
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+	    <xsl:template match="@*|node()">
+		    <xsl:copy>
+			    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		    </xsl:copy>
+	    </xsl:template>
+	    <xsl:template match="selectionLibroplanta">
+				    <xsl:element name="emphasis">
+					    <xsl:attribute name="emphasisType">em02</xsl:attribute>
+					    <xsl:copy>
+					    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+					    </xsl:copy>
+				    </xsl:element>
+	    </xsl:template>
+    </xsl:stylesheet>      
+    </xslt>
+  </rule>
+  
+  <rule id="underline" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="underline16.png">
+    <displayText>
+      <text lang="en">concat('Underline','')</text>
+      <text lang="ru">concat('Подчеркивание','')</text>
+    </displayText>       
+     <allowedContent CheckMultiple="False">
+      <Elements>
+        <emphasis></emphasis>
+      </Elements>
+    </allowedContent>
+    <xslt>
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+	    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" />
+	    <xsl:template match="@*|node()">
+		    <xsl:copy>
+			    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		    </xsl:copy>
+	    </xsl:template>
+	    <xsl:template match="selectionLibroplanta">
+				    <xsl:element name="emphasis">
+					    <xsl:attribute name="emphasisType">em03</xsl:attribute>
+					    <xsl:copy>
+					    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+					    </xsl:copy>
+				    </xsl:element>
+	    </xsl:template>
+    </xsl:stylesheet>      
+    </xslt>
+  </rule>
+
+  <rule id="overline" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="overline16.png">
+    <displayText>
+      <text lang="en">concat('Overline','')</text>
+      <text lang="ru">concat('Вектор','')</text>
+    </displayText>      
+     <allowedContent CheckMultiple="False">
+      <Elements>
+        <emphasis></emphasis>
+      </Elements>
+    </allowedContent>
+    <xslt>
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+	    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" />
+	    <xsl:template match="@*|node()">
+		    <xsl:copy>
+			    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		    </xsl:copy>
+	    </xsl:template>
+	    <xsl:template match="selectionLibroplanta">
+				    <xsl:element name="emphasis">
+					    <xsl:attribute name="emphasisType">em04</xsl:attribute>
+					    <xsl:copy>
+					    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+					    </xsl:copy>
+				    </xsl:element>
+	    </xsl:template>
+    </xsl:stylesheet>      
+    </xslt>
+  </rule>  
+  
+  <rule id="strikethrough" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="strikethrough16.png">
+    <displayText>
+      <text lang="en">concat('Strikethrough','')</text>
+      <text lang="ru">concat('Зачеркивание','')</text>
+    </displayText>    
+     <allowedContent CheckMultiple="False">
+      <Elements>
+        <emphasis></emphasis>
+      </Elements>
+    </allowedContent>
+    <xslt>
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+	    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" />
+	    <xsl:template match="@*|node()">
+		    <xsl:copy>
+			    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+		    </xsl:copy>
+	    </xsl:template>
+	    <xsl:template match="selectionLibroplanta">
+				    <xsl:element name="emphasis">
+					    <xsl:attribute name="emphasisType">em05</xsl:attribute>
+					    <xsl:copy>
+					    <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+					    </xsl:copy>
+				    </xsl:element>
+	    </xsl:template>
+    </xsl:stylesheet>      
+    </xslt>
+  </rule>
+
+  <rule id="superscript" enabledXPath="true()" mainElement="parent::*" contextMenuOrPopup="Popup" image="superscript16.png">
+    <displayText>
+      <text lang="en">concat('Superscript','')</text>
+      <text lang="ru">concat('Надстрочный','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <superScript></superScript>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" />
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <xsl:element name="superScript">
+            <xsl:copy>
+              <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+            </xsl:copy>
+          </xsl:element>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="subscript" enabledXPath="boolean(text())" mainElement="parent::*" contextMenuOrPopup="Popup" image="subscript16.png">
+    <displayText>
+      <text lang="en">concat('Subscript','')</text>
+      <text lang="ru">concat('Подстрочный','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <subScript></subScript>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no" />
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+        <xsl:template match="selectionLibroplanta">
+          <xsl:element name="subScript">
+            <xsl:copy>
+              <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+            </xsl:copy>
+          </xsl:element>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+ <rule id="insertTable" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert table','')</text>
+      <text lang="ru">concat('Вставить таблицу','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <table></table>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"/>
+        <xsl:variable name="cols" select="number($externalData//Columns)"></xsl:variable>
+        <xsl:variable name="rows" select="number($externalData//Rows)"></xsl:variable>
+        <xsl:variable name="header" select="boolean($externalData//Header)"></xsl:variable>
+        <xsl:variable name="footer" select="boolean($externalData//Footer)"></xsl:variable>
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+
+        <xsl:template match="selectionLibroplanta">
+          <xsl:copy>
+            <!--<xsl:apply-templates select="@*|node()"></xsl:apply-templates>-->
+            <table frame="all">
+			  <title></title>
+              <tgroup>
+                <xsl:attribute name="cols"><xsl:value-of select="$cols"></xsl:value-of></xsl:attribute>
+                <xsl:for-each select="xef:For(1,$cols)">
+                  <colspec>
+                    <xsl:attribute name="colname">col<xsl:value-of select="."></xsl:value-of></xsl:attribute>
+                    <xsl:attribute name="colwidth">1*</xsl:attribute>
+                  </colspec>
+                </xsl:for-each>
+                <xsl:if test="$header=true()">
+                  <thead>
+                      <row>
+                        <xsl:for-each select="xef:For(1,$cols)">
+                          <entry>
+                            <para></para>
+                          </entry>
+                        </xsl:for-each>
+                      </row>
+                  </thead>
+                </xsl:if>
+				<xsl:if test="$footer=true()">
+					<tfoot>
+						<row>
+							<xsl:for-each select="xef:For(1,$cols)">
+								<entry>
+									<para></para>
+								</entry>
+							</xsl:for-each>
+						</row>
+					</tfoot>
+				</xsl:if>
+                <tbody>
+                  <xsl:for-each select="xef:For(1,$rows)">
+                    <row>
+                      <xsl:for-each select="xef:For(1,$cols)">
+                        <entry><para></para></entry>
+                      </xsl:for-each>
+                    </row>
+                  </xsl:for-each>
+                </tbody>
+              </tgroup>
+            </table>
+          </xsl:copy>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+
+  <rule id="insertCaptionGroup" enabledXPath="true()" mainElement="parent::*">
+    <displayText>
+      <text lang="en">concat('Insert caption group','')</text>
+      <text lang="ru">concat('Вставить группу надписей','')</text>
+    </displayText>
+    <allowedContent CheckMultiple="False">
+      <Elements>
+        <captionGroup></captionGroup>
+      </Elements>
+    </allowedContent>
+    <xslt>
+      <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xef="http://www.libroplanta.com/xmlEditorFunctions" exclude-result-prefixes="fn xs xef">
+        <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+        <xsl:param name="externalData"/>
+        <xsl:variable name="cols" select="number($externalData//Columns)"></xsl:variable>
+        <xsl:variable name="rows" select="number($externalData//Rows)"></xsl:variable>
+
+        <xsl:template match="@*|node()">
+          <xsl:copy>
+            <xsl:apply-templates select="@*|node()"></xsl:apply-templates>
+          </xsl:copy>
+        </xsl:template>
+
+        <xsl:template match="selectionLibroplanta">
+          <xsl:copy>
+            <!--<xsl:apply-templates select="@*|node()"></xsl:apply-templates>-->
+            <captionGroup>
+                <xsl:attribute name="cols"><xsl:value-of select="$cols"></xsl:value-of></xsl:attribute>
+                <xsl:for-each select="xef:For(1,$cols)">
+                  <colspec>
+                    <xsl:attribute name="colname">col<xsl:value-of select="."></xsl:value-of></xsl:attribute>
+					<xsl:attribute name="colwidth">1*</xsl:attribute>
+                  </colspec>
+                </xsl:for-each>
+                <captionBody>
+                  <xsl:for-each select="xef:For(1,$rows)">
+                    <captionRow>
+                      <xsl:for-each select="xef:For(1,$cols)">
+                        <captionEntry>
+							<captionText/>
+                        </captionEntry>
+                      </xsl:for-each>
+                    </captionRow>
+                  </xsl:for-each>
+                </captionBody>
+            </captionGroup>
+          </xsl:copy>
+        </xsl:template>
+      </xsl:stylesheet>
+    </xslt>
+  </rule>
+</formatting>
